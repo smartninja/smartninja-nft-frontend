@@ -107,7 +107,7 @@ export default {
         if (this.chainId === 137) { // Polygon
           contractAddress = "0x666f0603624f547d5f751Dd2e478591EDc356811";
         } else if (this.chainId === 4) { // Rinkeby
-          contractAddress = "0xdf2f2419619a6296dc5a994a6213ad018f03d299";
+          contractAddress = "0x38c748128c39480BCaD39F6a7fB36b4eE9CBC280";
         }
 
         if (contractAddress) {
