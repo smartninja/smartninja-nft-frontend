@@ -49,7 +49,9 @@
 
     <!-- if user on wrong chain -->
     <div v-if="isActivated && wrongChain">
-      <h4 class="subtitle">You are on an unsupported network. Please switch to Polygon.</h4>
+      <h4 class="subtitle">
+        You are on an unsupported network. Please switch to Polygon.
+      </h4>
 
       <button class="btn btn-outline-success mt-5" @click="switchToPolygon">Click here to switch to Polygon</button>
     </div>
@@ -139,7 +141,7 @@ export default {
         blockExplorerUrls: ['https://polygonscan.com/']
       }]
 
-      window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+      this.provider.send('wallet_addEthereumChain', params) // this.provider.send instead of window.ethereum.request
         .then(() => console.log('Success'))
         .catch((error: Error) => console.log("Error", error.message))
 
