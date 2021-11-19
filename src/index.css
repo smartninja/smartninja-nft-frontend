@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  background-image: url(/src/assets/background.svg);
+  background-size: 100% auto;
+  height: 100vh;
+  padding-top: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+}
+
+h4 {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.btn-outline-success {
+  color: #5DC1A1;
+  border: 1px solid #5DC1A1;
+  box-sizing: border-box;
+  border-radius: 18px;
+  padding: 14px 26px;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn-outline-success:hover {
+  background-color: #5DC1A1;
+  border: 1px solid #5DC1A1;
+  font-family: 'Lato', sans-serif;
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+}
+
+.card-nft {
+  width: 18rem;
+  margin-top: 2rem;
+  border: 0px;
+  border-radius: 15px;
+}
+
+.card-nft-questionmark {
+  height: 18rem;
+}
+
+.card-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 11.23px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.card-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 17.47px;
+}
+
+.main-title {
+  margin-bottom: 44px;
+}
+
+.nft-questionmark {
+  color: #000000;
+  font-size: 5rem;
+}
+
+.spacer {
+  height: 1rem;
+}
+
+.subtitle {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    background-size: auto;
+  }
+}
